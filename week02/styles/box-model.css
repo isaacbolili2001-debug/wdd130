@@ -17,6 +17,13 @@
     height: auto;
 }
 
-blockquote {}
+blockquote {
+    margin: 0;
+}
 
-cite {}
+cite {
+    display: block;
+    border-top: 1px dotted #fff;
+    text-align: right;
+    font-size: smaller;
+}
