@@ -1,0 +1,129 @@
+/* Couleurs basées sur le wireframe */
+:root {
+    --header-footer-bg: #e8eff3;
+    /* Le violet pâle du wireframe */
+    --main-bg: #f2f2f2;
+    /* Gris clair pour les sections */
+    --border-color: #333;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    /* Chemin de l'image */
+    background-image: url('rafting27_1024.jpg');
+
+    /* Centrage et couverture */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* Pour que le fond prenne toute la hauteur de la fenêtre */
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Header */
+header {
+    background-color: var(--header-footer-bg);
+    padding: 10px;
+    border-bottom: 1px;
+}
+
+header .logo img {
+    width: 100px;
+    background-color: #fff;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    /* Navigation verticale comme sur l'image */
+    margin-top: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #0000EE;
+    margin-bottom: 5px;
+}
+
+/* Sections principales */
+main {
+    padding: 20px;
+}
+
+h1 {
+    top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 10px;
+    background-color: #03423bd0;
+    color: #c3d6e0;
+    position: relative;
+    opacity: 0.9;
+}
+
+hero p {
+    margin: 30px;
+    background-color: #e0c30bec;
+    position: absolute;
+    opacity: 0.8;
+    text-align: justify;
+
+}
+
+section {
+    top: 20px;
+    background-color: var(--main-bg);
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Spécificités Hero */
+.hero {
+    height: 100%;
+    position: relative;
+    margin-top: 0px;
+    background-image: url("../image/rafting27_1024.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+}
+
+.hero img {
+    float: right;
+    width: 150px;
+    height: 100%;
+    margin: 0 0 15px 15px;
+}
+
+.article {
+    top: 100px;
+    margin: 100px;
+    padding: 2px;
+    background-color: #e0c30bec;
+    position: relative;
+    opacity: 0.8;
+    text-align: justify;
+}
+
+/* Footer */
+footer {
+    background-color: var(--header-footer-bg);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--border-color);
+}
+
+.social-icons span {
+    margin-left: 10px;
+    font-weight: bold;
+}
