@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* wireframe color */
 :root {
     --header-footer-bg: #e8eff3;
@@ -48,17 +54,6 @@ main {
     padding: 20px;
 }
 
-h1 {
-    top: 10px;
-    margin-bottom: 20px;
-    text-align: center;
-    padding: 10px;
-    background-color: #03423bd0;
-    color: #c3d6e0;
-    position: relative;
-    opacity: 0.9;
-}
-
 section {
     top: 20px;
     margin-bottom: 20px;
@@ -75,7 +70,7 @@ section h2 {
     height: 460px;
     position: relative;
     margin-top: 0px;
-    background-image: url("../image/rafting27_1024.jpg");
+    background-image: url("../image/rafting27_1024\ .jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -85,11 +80,22 @@ section h2 {
 .hero img {
     float: right;
     width: 150px;
-    height: 155px;
+    height: auto;
     margin: 10 0 15px 15px;
 }
 
-.article {
+.hero article {
+    float: right;
+    position: absolute;
+}
+
+.hero article img {
+    width: 150px;
+    height: 155px;
+    margin: 10px 0px 15px 15px;
+}
+
+article {
     top: 99px;
     margin: 100px;
     padding: 1px;
@@ -97,6 +103,17 @@ section h2 {
     position: relative;
     opacity: 0.8;
     text-align: center;
+}
+
+.hero h1 {
+    top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 10px;
+    background-color: #03423bd0;
+    color: #c3d6e0;
+    position: absolute;
+    opacity: 0.9;
 }
 
 /* Footer */
