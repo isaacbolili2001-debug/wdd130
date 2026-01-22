@@ -79,9 +79,6 @@ section h2 {
 
 .hero img {
     float: right;
-    width: 150px;
-    height: auto;
-    margin: 10 0 15px 15px;
 }
 
 .hero article {
@@ -90,6 +87,7 @@ section h2 {
 }
 
 .hero article img {
+    float: right;
     width: 150px;
     height: 155px;
     margin: 10px 0px 15px 15px;
