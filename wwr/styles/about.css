@@ -2,15 +2,13 @@
 :root {
     --header-footer-bg: #e8eff3;
     --main-bg: #f2f2f2;
-    --margin: 0px;
-    --padding: 0px;
 }
 
 /* all about body */
 body {
     font-family: Arial, sans-serif;
-    margin: var(--margin);
-    padding: var(--padding);
+    margin: 0px;
+    padding: 0px;
     line-height: 1.6;
     background-image: url('rafting27_1024.jpg');
     background-size: cover;
@@ -101,8 +99,6 @@ section h2 {
     text-align: center;
 }
 
-.article img {}
-
 /* Footer */
 footer {
     background-color: var(--header-footer-bg);
@@ -115,7 +111,7 @@ footer {
 
 .socialmedia {
     width: 840px;
-    margin: var(--margin);
+    margin: 0px;
     font-weight: bold;
     display: inline;
 }
