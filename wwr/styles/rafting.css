@@ -70,7 +70,7 @@ section h2 {
     height: 460px;
     position: relative;
     margin-top: 0px;
-    background-image: url("../images/rafting27_1024\ .jpg");
+    background-image: url("../images/rafting.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -89,12 +89,12 @@ section h2 {
 .hero article img {
     float: right;
     width: 150px;
-    height: 155px;
-    margin: 10px 0px 15px 15px;
+    height: 100%;
+    margin: 10px 10px 15px 15px;
 }
 
 article {
-    top: 99px;
+    top: 220px;
     margin: 100px;
     padding: 1px;
     background-color: #e0c30bec;
@@ -104,7 +104,8 @@ article {
 }
 
 .hero h1 {
-    top: 10px;
+    width: 100%;
+    top: 30px;
     margin-bottom: 20px;
     text-align: center;
     padding: 10px;
