@@ -66,7 +66,7 @@ section h2 {
     height: 460px;
     position: relative;
     margin-top: 0px;
-    background-image: url("/wwr/images/rafting27_1024.jpg");
+    background-image: url("./wwr/images/rafting27_1024.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
