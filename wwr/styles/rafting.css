@@ -7,6 +7,13 @@
 /* wireframe color */
 :root {
     --header-footer-bg: #d1c4e9;
+    --border-color: #777;
+    --white-color: white;
+    --text-color: #333;
+    --background-hover-color: #f0f0f0;
+    --h-color: #03423bd0;
+    --h-text-color: #c3d6e0;
+
 }
 
 /* all about body */
@@ -25,7 +32,7 @@ header {
     align-items: center;
     background-color: var(--header-footer-bg);
     padding: 20px;
-    border: 1px solid #777;
+    border: 1px solid var(--border-color);
 }
 
 header .logo img {
@@ -51,14 +58,14 @@ nav a {
     background-color: white;
     padding: 10px;
     text-decoration: none;
-    color: #333;
-    border: 1px solid #777;
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
     text-align: center;
     flex: 1 1 auto;
 }
 
 nav a:hover {
-    background-color: #f0f0f0;
+    background-color: var(--background-hover-color);
 }
 
 /* main padding */
@@ -74,7 +81,8 @@ section {
 }
 
 section h2 {
-    background-color: var(--main-bg);
+    background-color: var(--h-color);
+    color: var(--h-text-color);
 }
 
 /* Hero */
@@ -96,8 +104,8 @@ section h2 {
     margin-bottom: 1rem;
     text-align: center;
     padding: 10px;
-    background-color: #03423bd0;
-    color: #c3d6e0;
+    background-color: var(--h-color);
+    color: var(--h-text-color);
     position: absolute;
     opacity: 0.9;
     bottom: auto;
