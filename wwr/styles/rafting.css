@@ -91,7 +91,7 @@ section h2 {
     height: 540px;
     position: relative;
     margin-top: 0px;
-    background-image: url("/wwr/images/rafting.jpg");
+    background-image: url("/./wwr/images/rafting.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -207,5 +207,5 @@ footer {
 .socialmedia img {
     width: 20px;
     border: 1px solid var(--text-color);
-    background-color: white;
+    background-color: var(--white-color);
 }
