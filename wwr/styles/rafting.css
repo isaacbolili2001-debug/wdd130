@@ -6,8 +6,7 @@
 
 /* wireframe color */
 :root {
-    --header-footer-bg: #e8eff3;
-    --main-bg: #f2f2f2;
+    --header-footer-bg: #d1c4e9;
 }
 
 /* all about body */
@@ -17,7 +16,6 @@ body {
     padding: 0px;
     line-height: 1.6;
     min-height: 100vh;
-    margin: 0;
 }
 
 /* Header */
@@ -25,10 +23,9 @@ header {
     display: grid;
     grid-template-columns: 1fr auto;
     align-items: center;
-    background-color: #d1c4e9;
+    background-color: var(--header-footer-bg);
     padding: 20px;
     border: 1px solid #777;
-    align-items: center;
 }
 
 header .logo img {
@@ -64,10 +61,6 @@ nav a:hover {
     background-color: #f0f0f0;
 }
 
-body {
-    font-family: 'Times New Roman', Times, sans-serif;
-}
-
 /* main padding */
 main {
     padding: 20px;
@@ -87,7 +80,7 @@ section h2 {
 /* Hero */
 .hero {
     padding: 100px 20px;
-    height: auto;
+    height: 540px;
     position: relative;
     margin-top: 0px;
     background-image: url("/wwr/images/rafting.jpg");
@@ -107,6 +100,7 @@ section h2 {
     color: #c3d6e0;
     position: absolute;
     opacity: 0.9;
+    bottom: auto;
 }
 
 .hero img {
@@ -114,9 +108,11 @@ section h2 {
 }
 
 .hero article {
+    top: auto;
     background-color: rgba(255, 213, 79, 0.9);
     padding: 20px;
     margin: 30px 0 0 0;
+    position: absolute;
 }
 
 .hero article img {
@@ -190,20 +186,9 @@ footer {
     display: grid;
     grid-template-columns: 1fr auto;
     align-items: center;
-    background-color: #d1c4e9;
+    background-color: var(--header-footer-bg);
     padding: 20px 40px;
     border-top: 1px solid #777;
-}
-
-.socials {
-    display: grid;
-    grid-template-columns: repeat(3, 40px);
-    gap: 5px;
-}
-
-.social-box {
-    border: 1px solid #333;
-    text-align: center;
 }
 
 .socialmedia {
