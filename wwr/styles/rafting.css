@@ -22,27 +22,50 @@ body {
 
 /* Header */
 header {
-    background-color: var(--header-footer-bg);
-    padding: 10px;
-    border-bottom: 1px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    background-color: #d1c4e9;
+    padding: 20px;
+    border: 1px solid #777;
+    align-items: center;
 }
 
 header .logo img {
-    width: 100px;
-    background-color: #fff;
-    padding: 10px;
+    margin: 0 0.25rem 0 1rem;
+    width: 64px;
+    height: auto;
+}
+
+#logo {
+    font-size: 2rem;
+    font-family: Acme, Arial, sans-serif;
 }
 
 nav {
     display: flex;
-    flex-direction: column;
-    margin-top: 10px;
+    list-style: none;
+    justify-content: flex-end;
+
 }
 
 nav a {
+    display: block;
+    background-color: white;
+    padding: 10px;
     text-decoration: none;
-    color: #0000EE;
-    margin-bottom: 5px;
+    color: #333;
+    border: 1px solid #777;
+    text-align: center;
+    flex: 1 1 auto;
+}
+
+nav a:hover {
+    background-color: #f0f0f0;
+}
+
+body {
+    font-family: 'Times New Roman', Times, sans-serif;
 }
 
 /* main padding */
@@ -63,7 +86,8 @@ section h2 {
 
 /* Hero */
 .hero {
-    height: 460px;
+    padding: 100px 20px;
+    height: auto;
     position: relative;
     margin-top: 0px;
     background-image: url("/wwr/images/rafting.jpg");
@@ -73,36 +97,10 @@ section h2 {
     margin-bottom: 20px;
 }
 
-.hero img {
-    float: right;
-}
-
-.hero article {
-    float: right;
-    position: absolute;
-}
-
-.hero article img {
-    float: right;
-    width: 150px;
-    height: 100%;
-    margin: 10px 10px 15px 15px;
-}
-
-article {
-    top: 220px;
-    margin: 100px;
-    padding: 1px;
-    background-color: #e0c30bec;
-    position: relative;
-    opacity: 0.8;
-    text-align: center;
-}
-
 .hero h1 {
-    width: 100%;
+    justify-self: center;
     top: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
     text-align: center;
     padding: 10px;
     background-color: #03423bd0;
@@ -111,24 +109,110 @@ article {
     opacity: 0.9;
 }
 
-/* Footer */
-footer {
-    background-color: var(--header-footer-bg);
+.hero img {
+    float: right;
+}
+
+.hero article {
+    background-color: rgba(255, 213, 79, 0.9);
     padding: 20px;
+    margin: 30px 0 0 0;
+}
+
+.hero article img {
+    float: right;
+    width: 100px;
+    height: 100px;
+    border: 2px solid #555;
+}
+
+article {
+    top: 20px;
+    margin: 100px;
+    padding: 1px;
+    position: relative;
+    opacity: 0.8;
+    text-align: center;
+}
+
+.history {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.history-container {
+    display: grid;
+    grid-template-columns: 1fr 100px 1fr;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.history-img-box img {
+    width: 100%;
+    background-color: #311b92;
+    height: 180px;
+    object-fit: cover;
+}
+
+.adventures {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fafafa;
+}
+
+.adventure-gallery {
     display: flex;
     justify-content: space-between;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+figure {
+    margin: 0;
+    flex: 1;
+}
+
+figure img {
+    width: 100%;
+    height: 120px;
+    background-color: #e0e0e0;
+    object-fit: cover;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr auto;
     align-items: center;
-    border-top: 1px;
+    background-color: #d1c4e9;
+    padding: 20px 40px;
+    border-top: 1px solid #777;
+}
+
+.socials {
+    display: grid;
+    grid-template-columns: repeat(3, 40px);
+    gap: 5px;
+}
+
+.social-box {
+    border: 1px solid #333;
+    text-align: center;
 }
 
 .socialmedia {
-    width: 840px;
-    margin: 0px;
-    font-weight: bold;
-    display: inline;
+    display: flex;
+    gap: 5px;
 }
 
 .socialmedia img {
     width: 20px;
-    margin: 10px;
+    border: 1px solid #333;
+    background-color: white;
 }

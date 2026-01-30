@@ -14,6 +14,8 @@ div {
     margin: 1rem;
     border: 1px dashed;
     padding: 1rem;
+    align-content: center;
+
 }
 
 .one {
@@ -24,18 +26,27 @@ div {
 .flex {
     background-color: #aba;
     /* write declarations here */
+    background-color: #abb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
 .grid {
     background-color: #abb;
     /* enter declarations here */
+    background-color: #abb;
+    display: grid;
+    place-items: center;
 
 }
 
 .container2 {
     /* write declarations here */
-
+    flex-wrap: wrap;
+    justify-content: space-around;
+    display: flex;
 }
 
 .two {
@@ -45,12 +56,14 @@ div {
 
 .container3 {
     /* write declarations here */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 
 }
 
 .columns-3 {
     /* write declaration here */
-
+    grid-column: 1/4
 }
 
 .three {
