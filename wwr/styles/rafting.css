@@ -196,7 +196,7 @@ footer {
     align-items: center;
     background-color: var(--header-footer-bg);
     padding: 20px 40px;
-    border-top: 1px solid #777;
+    border-top: 1px solid var(--border-color);
 }
 
 .socialmedia {
@@ -206,6 +206,6 @@ footer {
 
 .socialmedia img {
     width: 20px;
-    border: 1px solid #333;
+    border: 1px solid var(--text-color);
     background-color: white;
 }
