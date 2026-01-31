@@ -11,8 +11,8 @@
     --white-color: white;
     --text-color: #333;
     --background-hover-color: #f0f0f0;
-    --h-color: #03423bd0;
-    --h-text-color: #c3d6e0;
+    --h-color: rgba(4, 3, 36, 0.212);
+    --h-text-color: #1381bc;
 
 }
 
@@ -91,7 +91,7 @@ section h2 {
     height: 540px;
     position: relative;
     margin-top: 0px;
-    background-image: url("/wwr/images/rafting29_600.jpg");
+    background-image: url("/wwr/images/rafting4_600.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
