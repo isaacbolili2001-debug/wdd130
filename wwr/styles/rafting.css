@@ -209,3 +209,73 @@ footer {
     border: 1px solid var(--text-color);
     background-color: var(--white-color);
 }
+
+.addresse {
+    justify-self: center;
+    text-align: center;
+    padding: 1px;
+
+}
+
+.map-container img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+section form {
+    float: right;
+    border: 1px solid rgb(0, 0, 0/10%);
+    margin-left: 10px;
+}
+
+.column2 {
+    grid-template-columns: 1fr auto;
+
+}
+
+input {
+    padding: .55rem;
+    width: 210px;
+    margin: 10px;
+}
+
+button {
+    padding: .55rem;
+    width: 210px;
+    margin: 10px;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+    margin: 1rem;
+}
+
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 0.5rem 0;
+}
+
+label {
+    text-align: left;
+}
+
+input[type="radio"] {
+    margin: 0px;
+    padding: 0px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #e0e0e0;
+    border: 1px solid #888;
+    cursor: pointer;
+}
