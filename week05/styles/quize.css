@@ -1,0 +1,84 @@
+main {
+    max-width: 500px;
+
+    background-color: #555;
+    color: #fff;
+}
+
+h1 {
+    margin: .5rem;
+
+}
+
+form {
+    background-color: #ddd;
+    color: #111;
+}
+
+label,
+input,
+button,
+select,
+textarea {
+    font-family: Roboto, Arial, sans-serif;
+}
+
+label {
+    text-align: center;
+    padding-right: 1rem;
+}
+
+input,
+select,
+textarea,
+button {
+    padding: .75rem;
+    width: 350px;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+button {
+    margin: 0 auto;
+    background-color: navy;
+    color: #fff;
+    display: block;
+    border: 1px solid rgb(0 0 0/10%);
+    border-radius: .5rem;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+.quiz-item {
+    border: none;
+}
+
+label {
+    margin: 10px;
+    text-align: left;
+}
+
+span {
+    font-size: 1rem;
+    color: navy;
+    font-weight: bold;
+}
+
+code {
+    display: block;
+    color: #fff;
+    background-color: #000;
+
+}
+
+.box {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid rgb(0 0 0/10%);
+}
