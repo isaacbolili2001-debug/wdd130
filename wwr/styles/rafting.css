@@ -217,50 +217,50 @@ footer {
 
 }
 
-.map-container img {
+.map-container iframe {
     width: 100%;
-    height: auto;
+    height: 100%;
     border: 1px solid #ccc;
+    margin-right: 0px;
 }
 
 .contact-grid {
-    display: grid;
+    display: flex;
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
+    gap: 15px;
+
 }
 
 section form {
-    float: right;
     border: 1px solid rgb(0, 0, 0/10%);
-    margin-left: 10px;
+    width: 350px;
+    height: 100%;
+    left: 0px;
 }
 
-.column2 {
-    grid-template-columns: 1fr auto;
-
-}
-
-input {
-    padding: .55rem;
+input[type="text"],
+input[type="email"] {
     width: 210px;
-    margin: 10px;
-}
-
-button {
-    padding: .55rem;
-    width: 210px;
-    margin: 10px;
+    margin: 5px;
+    padding: 6px;
 }
 
 .form-item {
     display: grid;
     align-items: center;
     margin: 1rem;
+
 }
 
 .column1 {
     grid-template-columns: 3fr 1fr;
     margin: 0.5rem 0;
+}
+
+.column2 {
+    margin-top: 0px;
+    grid-template-columns: 1fr auto;
+
 }
 
 label {
@@ -273,9 +273,37 @@ input[type="radio"] {
 }
 
 button {
-    width: 100%;
+    width: 300px;
     padding: 10px;
     background-color: #e0e0e0;
     border: 1px solid #888;
     cursor: pointer;
+    margin: 20px 10px 0px;
+}
+
+.purpose {
+    display: flex;
+    margin: 0px;
+    width: 100%;
+}
+
+.purpose-message {
+    margin: 0px;
+    margin-top: 15px;
+    width: 100px;
+}
+
+.purpose-option {
+    text-align: left;
+}
+
+input[type="checkbox"] {
+    margin-left: 2px;
+}
+
+.contact-figure img {
+    width: 100%;
+    height: 100%;
+    background-color: #e0e0e0;
+    object-fit: cover;
 }
