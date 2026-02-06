@@ -232,7 +232,7 @@ footer {
 }
 
 section form {
-    border: 1px solid rgb(0, 0, 0/10%);
+    border: 1px solid rgb(0 0 0/10%);
     width: 350px;
     height: 100%;
     left: 0px;
