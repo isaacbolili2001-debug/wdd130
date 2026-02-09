@@ -89,7 +89,7 @@ section h2 {
 .hero {
     padding: 100px 20px;
     height: 540px;
-    position: relative;
+    position: absolute;
     margin-top: 0px;
     background-image: url("../images/background.png");
     background-repeat: no-repeat;
