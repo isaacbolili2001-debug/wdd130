@@ -6,13 +6,12 @@
 
 /* wireframe color */
 :root {
-    --header-footer-bg: #d1c4e9;
-    --border-color: #777;
+    --header-footer-bg: #777;
+    --background-color: #777;
     --white-color: white;
-    --text-color: #333;
-    --background-hover-color: #f0f0f0;
-    --h-color: rgba(4, 3, 36, 0.212);
-    --h-text-color: #1381bc;
+    --background-hover-color: #d9c5a3;
+    --background-button-color: #d9c5a3;
+    --header-back-color: rgba(0, 0, 0, 0.4);
 
 }
 
@@ -23,16 +22,26 @@ body {
     padding: 0px;
     line-height: 1.6;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Header */
 header {
-    display: grid;
-    grid-template-columns: 1fr auto;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    background-color: var(--header-footer-bg);
-    padding: 20px;
-    border: 1px solid var(--border-color);
+    background-color: var(--header-back-color);
+    padding: 10px;
+    z-index: 10;
+}
+
+header a {
+    color: var(--white-color);
+    text-decoration: none;
 }
 
 header .logo img {
@@ -49,28 +58,26 @@ header .logo img {
 nav {
     display: flex;
     list-style: none;
-    justify-content: flex-end;
-
+    flex: auto;
+    gap: 30px;
 }
 
 nav a {
-    display: block;
-    background-color: white;
-    padding: 10px;
+    padding: 5px;
     text-decoration: none;
-    color: var(--text-color);
-    border: 1px solid var(--border-color);
     text-align: center;
     flex: 1 1 auto;
+    font-weight: bold;
+    box-sizing: border-box;
 }
 
-nav a:hover {
+nav b:hover {
     background-color: var(--background-hover-color);
 }
 
 /* main padding */
 main {
-    padding: 20px;
+    flex: 1;
 }
 
 section {
@@ -81,46 +88,100 @@ section {
 }
 
 section h2 {
-    background-color: var(--h-color);
-    color: var(--h-text-color);
+    background-color: var(--background-color);
+    color: var(--white-color);
+    font-family: "Source Sans", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 200;
+    letter-spacing: -0.02em;
 }
 
 /* Hero */
 .hero {
-    padding: 100px 20px;
-    height: 540px;
-    position: relative;
-    margin-top: 0px;
-    background-image: url("../images/background.png");
-    background-repeat: no-repeat;
+    /* Set the background image */
+    background: url('../images/rafting17_600.jpg');
     background-size: cover;
     background-position: center;
-    margin-bottom: 20px;
+
+    /* Make it full screen */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
 }
 
-.hero h1 {
-    justify-self: center;
-    top: 30px;
-    margin-bottom: 1rem;
-    text-align: center;
-    padding: 10px;
-    background-color: var(--h-color);
-    color: var(--h-text-color);
+.hero-title {
+    margin: 0;
+    font-size: 3rem;
+}
+
+.hero-content {
     position: absolute;
-    opacity: 0.9;
-    bottom: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--white-color);
+    width: 80%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hero-content h1 {
+    font-family: "Source Sans", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 200;
+    letter-spacing: -0.02em;
+    font-size: 3.5rem;
+    margin-bottom: 0.2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content p {
+    margin-bottom: 2px;
+    font-size: 1.2rem;
+}
+
+.hero-content button {
+    margin-bottom: auto;
+}
+
+.hero-content a {
+    color: var(--white-color);
+    text-decoration: underline;
+}
+
+.join-book-btn {
+    margin-top: 20px;
+    background-color: var(--background-button-color);
+    padding: 8px 20px;
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.join-book-btn:hover {
+    background-color: var(--background-hover-color);
 }
 
 .hero img {
     float: right;
 }
 
-.hero article {
+.hero-article {
     top: auto;
-    background-color: rgba(255, 213, 79, 0.9);
+    background-color: var(--header-back-color);
     padding: 20px;
     margin: 30px 0 0 0;
-    position: absolute;
+
+}
+
+.hero-article p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 0px;
 }
 
 .hero article img {
@@ -130,6 +191,18 @@ section h2 {
     border: 2px solid #555;
 }
 
+.hero article p {
+    font-style: oblique;
+    font-weight: bold;
+}
+
+.hero-msg h1 {
+    font-size: 3rem;
+    font-family: 'Rock Salt', cursive, sans-serif;
+    /* Rough adventure font */
+    margin-bottom: 10px;
+}
+
 article {
     top: 20px;
     margin: 100px;
@@ -137,6 +210,63 @@ article {
     position: relative;
     opacity: 0.8;
     text-align: center;
+}
+
+.adventure-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 50px 10%;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    border: 5px solid #d9c5a3;
+    /* Tan border from your screenshot */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* "More Than Just The Thrill" (The Overlap) */
+.thrill-section {
+    background-color: #e6d5b8;
+    /* Light tan background */
+    padding: 80px 10%;
+}
+
+.thrill-container {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.thrill-img {
+    width: 70%;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.thrill-box {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    /* Centers box vertically against the image */
+    width: 45%;
+    background-color: #6e7667;
+    /* Dark grayish-green box */
+    color: white;
+    padding: 30px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .history {
@@ -190,33 +320,6 @@ figcaption {
     color: #555;
 }
 
-footer {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    align-items: center;
-    background-color: var(--header-footer-bg);
-    padding: 20px 40px;
-    border-top: 1px solid var(--border-color);
-}
-
-.socialmedia {
-    display: flex;
-    gap: 5px;
-}
-
-.socialmedia img {
-    width: 20px;
-    border: 1px solid var(--text-color);
-    background-color: var(--white-color);
-}
-
-.addresse {
-    justify-self: center;
-    text-align: center;
-    padding: 1px;
-
-}
-
 .map-container iframe {
     width: 100%;
     height: 100%;
@@ -225,10 +328,17 @@ footer {
 }
 
 .contact-grid {
+    margin: 0 auto;
     display: flex;
     grid-template-columns: 1fr 1fr;
-    gap: 15px;
+    gap: 20px;
+    padding: 40px 5%;
 
+}
+
+.main-title {
+    padding: 40px 0;
+    grid-column: 1/ span 2;
 }
 
 section form {
@@ -236,6 +346,22 @@ section form {
     width: 350px;
     height: 100%;
     left: 0px;
+}
+
+fieldset {
+    margin: 30px;
+    gap: 10px;
+    padding: 10px;
+    justify-self: center;
+}
+
+fieldset label {
+    color: var(--background-color);
+}
+
+legend {
+    font-weight: bolder;
+    color: var(--background-color);
 }
 
 input[type="text"],
@@ -306,4 +432,63 @@ input[type="checkbox"] {
     height: 100%;
     background-color: #e0e0e0;
     object-fit: cover;
+}
+
+/*  all about trips*/
+
+/* Multi-column Layout for Trips */
+.trip-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.trip-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+}
+
+.trip-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th,
+td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    background-color: var(--header-footer-bg);
+    padding: 20px 40px;
+    border-top: 1px solid var(--border-color);
+    color: var(--white-color);
+}
+
+.socialmedia {
+    display: flex;
+    gap: 5px;
+}
+
+.socialmedia img {
+    width: 30px;
 }
