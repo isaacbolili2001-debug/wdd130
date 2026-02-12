@@ -170,7 +170,7 @@ section h2 {
     float: right;
 }
 
-.hero-article {
+.hero article {
     top: auto;
     background-color: var(--header-back-color);
     padding: 20px;
@@ -178,7 +178,7 @@ section h2 {
 
 }
 
-.hero-article p {
+.hero article p {
     font-size: 1.2rem;
     line-height: 1.6;
     margin-bottom: 0px;
