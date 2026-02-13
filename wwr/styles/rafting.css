@@ -9,7 +9,7 @@
     --header-footer-bg: #777;
     --background-color: #777;
     --white-color: white;
-    --background-hover-color: #d9c5a3;
+    --background-hover-color: rgba(0, 0, 0, 0.3);
     --background-button-color: #d9c5a3;
     --header-back-color: rgba(0, 0, 0, 0.4);
 
