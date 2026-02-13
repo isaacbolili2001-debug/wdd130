@@ -148,14 +148,14 @@ section h2 {
 
 .join-book-btn {
     margin-top: 20px;
-    background-color: var(--background-button-color);
+    background-color: var(--background-hover-color);
     padding: 8px 20px;
     text-decoration: none;
     color: var(--white-color);
 }
 
 .join-book-btn:hover {
-    background-color: var(--background-hover-color);
+    background-color: var(--background-color);
 }
 
 .hero img {
