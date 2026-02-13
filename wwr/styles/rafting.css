@@ -97,10 +97,6 @@ section h2 {
 
 /* Hero */
 .hero {
-    /* Set the background image */
-    background-size: cover;
-    background-position: center;
-
     /* Make it full screen */
     width: 100%;
     height: 100%;
@@ -110,6 +106,7 @@ section h2 {
     align-items: center;
     color: white;
     text-align: center;
+    position: relative;
 }
 
 .hero-title {
@@ -119,7 +116,7 @@ section h2 {
 
 .hero-content {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
