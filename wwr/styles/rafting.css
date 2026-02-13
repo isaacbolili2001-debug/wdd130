@@ -12,6 +12,7 @@
     --background-hover-color: lightgray;
     --background-button-color: #777;
     --header-back-color: rgba(0, 0, 0, 0.4);
+    --section-background: #fafafa;
 
 }
 
@@ -336,10 +337,7 @@ section form {
 }
 
 fieldset {
-    margin: 50px;
-    gap: 10px;
-    padding: 10px;
-    justify-self: center;
+    margin: 10px;
 }
 
 fieldset label {
@@ -414,6 +412,62 @@ input[type="checkbox"] {
     height: 100%;
     background-color: #e0e0e0;
     object-fit: cover;
+}
+
+/* News letter section */
+
+/*News form*/
+
+.newsletter-section {
+    top: 20px;
+    background-color: var(--section-background);
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 40px 5%;
+    padding: 50px 10%;
+    text-align: center;
+
+}
+
+.news-container-form {
+    margin: 10px;
+    width: 300px;
+    display: flex;
+    border: none;
+    align-self: center;
+    background-color: #e6d5b8;
+
+}
+
+.news-container-form button {
+    width: 210px;
+}
+
+/*News explanation*/
+
+.news-container-explanation {
+    align-self: center;
+    background-color: #e6d5b8;
+    display: flex;
+}
+
+.news-container-explanation p {
+    color: #333333;
+    /* Dark gray for comfort */
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 1.1rem;
+    /* Slightly larger than default */
+    line-height: 1.6;
+    /* Adds breathing room between lines */
+    text-align: left;
+    /* Left-aligned is easier to read than centered/justified */
+    max-width: 650px;
+    /* Prevents eye fatigue from long lines */
+    margin: 0 auto;
+    /* Centers the text block itself */
 }
 
 /*  all about trips*/
