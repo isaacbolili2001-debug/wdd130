@@ -109,11 +109,6 @@ section h2 {
     position: relative;
 }
 
-.hero-title {
-    margin: 0;
-    font-size: 3rem;
-}
-
 .hero-content {
     position: absolute;
     top: 60%;
@@ -187,11 +182,6 @@ section h2 {
     width: 100px;
     height: 100px;
     border: 2px solid #555;
-}
-
-.hero article p {
-    font-style: oblique;
-    font-weight: bold;
 }
 
 .hero h1 {
@@ -338,11 +328,6 @@ figcaption {
 
 }
 
-.main-title {
-    padding: 40px 0;
-    grid-column: 1/ span 2;
-}
-
 section form {
     border: 1px solid rgb(0 0 0/10%);
     width: 350px;
@@ -378,11 +363,6 @@ input[type="email"] {
     align-items: center;
     margin: 1rem;
 
-}
-
-.column1 {
-    grid-template-columns: 3fr 1fr;
-    margin: 0.5rem 0;
 }
 
 .column2 {
