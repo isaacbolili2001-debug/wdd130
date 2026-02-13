@@ -161,6 +161,9 @@ section h2 {
 
 .hero img {
     float: right;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
 }
 
 .hero article {
@@ -426,7 +429,6 @@ input[type="checkbox"] {
     display: flex;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-    padding: 40px 5%;
     padding: 50px 10%;
     text-align: center;
 
