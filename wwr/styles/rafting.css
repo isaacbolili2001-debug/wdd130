@@ -6,12 +6,11 @@
 
 /* wireframe color */
 :root {
-    --header-footer-bg: #777;
-    --background-color: #777;
-    --white-color: white;
+    --header-footer-bg: rgba(0, 0, 0, 0.4);
+    --background-color: rgb(119, 119, 119);
+    --white-color: rgb(255, 255, 255);
     --background-hover-color: lightgray;
     --background-button-color: #777;
-    --header-back-color: rgba(0, 0, 0, 0.4);
     --section-background: #fafafa;
 
 }
@@ -29,13 +28,14 @@ body {
 
 /* Header */
 header {
+    color: #ffffff;
     position: absolute;
     top: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--header-back-color);
+    background-color: var(--header-footer-bg);
     padding: 10px;
     z-index: 10;
 }
@@ -89,7 +89,7 @@ section {
 }
 
 section h2 {
-    background-color: var(--background-color);
+    background-color: #767676;
     color: var(--white-color);
     font-family: "Source Sans", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-weight: 200;
@@ -169,7 +169,7 @@ section h2 {
 .hero article {
     position: absolute;
     top: auto;
-    background-color: var(--header-back-color);
+    background-color: var(--header-footer-bg);
     margin: 0;
     margin-top: 320px;
     margin-bottom: 70px;
@@ -349,7 +349,8 @@ fieldset label {
 
 legend {
     font-weight: bolder;
-    color: var(--background-color);
+    color: #595959;
+    background-color: rgb(230, 213, 184);
 }
 
 input[type="text"],
