@@ -149,10 +149,11 @@ section h2 {
 
 .join-book-btn {
     margin-top: 20px;
-    background-color: var(--background-button-color);
     padding: 8px 20px;
     text-decoration: none;
     color: var(--white-color);
+    background-color: #767676;
+    border: none;
 }
 
 .join-book-btn:hover {
@@ -344,7 +345,8 @@ fieldset {
 }
 
 fieldset label {
-    color: var(--background-color);
+    color: #595959;
+    background-color: rgb(230, 213, 184);
 }
 
 legend {
