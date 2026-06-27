@@ -1,0 +1,28 @@
+img{
+    width: 300px;
+}
+figcaption{
+    font-weight: bold;
+}
+
+.box{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+.isaac{
+    margin: auto;
+    text-align: center;
+    
+
+}
+section{
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    grid-template-columns: 1fr, 1fr, 1fr;
+    gap: 5px;
+}

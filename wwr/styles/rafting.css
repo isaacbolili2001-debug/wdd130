@@ -260,7 +260,7 @@ article {
     width: 45%;
     background-color: #6e7667;
     /* Dark grayish-green box */
-    color: white;
+    color: var(--white-color);
     padding: 30px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
